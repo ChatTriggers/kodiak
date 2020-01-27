@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 0.17.4"/>
+<link rel="icon" href="https://copper-leaf.github.io/kodiak/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>Kodiak</title>
+
+
+<meta name="description" content="Wrappers around code documentation CLI tools to produce JSON models, usable as libraries">
+
+
+
+
+
+<script>
+    window.site = {"orchidVersion":"0.17.4","baseUrl":"https://copper-leaf.github.io/kodiak","environment":"prod","version":"0.4.5"};
+</script>
+
+
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://copper-leaf.github.io/kodiak/Copper/53078e28/assets/css/bulma.css"/>
+<link rel="stylesheet" type="text/css" href="https://copper-leaf.github.io/kodiak/Copper/53078e28/assets/css/extraCss.css"/>
+<link rel="stylesheet" type="text/css" href="https://copper-leaf.github.io/kodiak/Copper/53078e28/assets/css/bulma-tooltip.css"/>
+<link rel="stylesheet" type="text/css" href="https://copper-leaf.github.io/kodiak/Copper/53078e28/assets/css/bulma-accordion.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://copper-leaf.github.io/kodiak/PrismJS/prism-themes/master/themes/prism-duotone-light.css"/>
+<!-- end:inject styles -->
+
+</head>
+<body>
+
+<div class="columns is-marginless">
+  
+    <div class="column is-one-third is-paddingless column-main-left is-hidden-mobile">
+    
+
+
+    
+
+
+<section class="hero is-primary is-bold is-fullheight">
+<!-- Hero header: will stick at the top -->
+<div class="hero-head">
+  <div class="columns is-mobile has-text-centered">
+  
+    <div class="column">
+      <a class="icon is-inline-block" href="https://copper-leaf.github.io/kodiak" title="Home">
+        <i class="fas fa-home large-social-icon"></i>
+      </a>
+    </div>
+  
+    <div class="column">
+      <a class="icon is-inline-block" href="https://github.com/copper-leaf/kodiak" title="Github">
+        <i class="fab fa-github large-social-icon"></i>
+      </a>
+    </div>
+  
+    <div class="column">
+      <a class="icon is-inline-block" href="https://twitter.com/OrchidSSG" title="Twitter">
+        <i class="fab fa-twitter large-social-icon"></i>
+      </a>
+    </div>
+  
+  </div>
+</div>
+
+<!-- Hero content: will be in the middle -->
+<div class="hero-body">
+  <div class="container has-text-centered">
+    <figure class="image is-128x128">
+      <img src="https://copper-leaf.github.io/kodiak/assets/media/theme-logo.png" alt="">
+    </figure>
+    <h1 class="title is-1 is-spaced">Kodiak</h1>
+    <p class="subtitle is-4">Wrappers around code documentation CLI tools to produce JSON models, usable as libraries</p>
+  </div>
+</div>
+<!-- Hero footer: will stick at the bottom -->
+<div class="hero-foot">
+  <nav class="tabs is-boxed is-centered">
+    <div class="container">
+      <ul>
+      
+        <li class="is-active">
+          <a href="https://copper-leaf.github.io/kodiak">Home</a>
+        </li>
+      
+        <li class="">
+          <a href="https://copper-leaf.github.io/kodiak/wiki">Wiki</a>
+        </li>
+      
+        <li class="">
+          <a href="https://copper-leaf.github.io/kodiak/changelog">Changelog</a>
+        </li>
+      
+      </ul>
+    </div>
+  </nav>
+</div>
+</section>
+
+    </div>
+    <div class="column is-one-third is-paddingless column-main-left is-hidden-tablet">
+    
+
+
+    
+
+
+<section class="hero is-primary is-bold ">
+<!-- Hero header: will stick at the top -->
+<div class="hero-head">
+  <div class="columns is-mobile has-text-centered">
+  
+    <div class="column">
+      <a class="icon is-inline-block" href="https://copper-leaf.github.io/kodiak" title="Home">
+        <i class="fas fa-home large-social-icon"></i>
+      </a>
+    </div>
+  
+    <div class="column">
+      <a class="icon is-inline-block" href="https://github.com/copper-leaf/kodiak" title="Github">
+        <i class="fab fa-github large-social-icon"></i>
+      </a>
+    </div>
+  
+    <div class="column">
+      <a class="icon is-inline-block" href="https://twitter.com/OrchidSSG" title="Twitter">
+        <i class="fab fa-twitter large-social-icon"></i>
+      </a>
+    </div>
+  
+  </div>
+</div>
+
+<!-- Hero content: will be in the middle -->
+<div class="hero-body">
+  <div class="container has-text-centered">
+    <figure class="image is-128x128">
+      <img src="https://copper-leaf.github.io/kodiak/assets/media/theme-logo.png" alt="">
+    </figure>
+    <h1 class="title is-1 is-spaced">Kodiak</h1>
+    <p class="subtitle is-4">Wrappers around code documentation CLI tools to produce JSON models, usable as libraries</p>
+  </div>
+</div>
+<!-- Hero footer: will stick at the bottom -->
+<div class="hero-foot">
+  <nav class="tabs is-boxed is-centered">
+    <div class="container">
+      <ul>
+      
+        <li class="is-active">
+          <a href="https://copper-leaf.github.io/kodiak">Home</a>
+        </li>
+      
+        <li class="">
+          <a href="https://copper-leaf.github.io/kodiak/wiki">Wiki</a>
+        </li>
+      
+        <li class="">
+          <a href="https://copper-leaf.github.io/kodiak/changelog">Changelog</a>
+        </li>
+      
+      </ul>
+    </div>
+  </nav>
+</div>
+</section>
+
+    </div>
+  
+  <div class="column is-two-thirds is-paddingless column-main-right">
+    <div class="textured">
+    
+      <div class="box">
+      
+<nav class="breadcrumb" aria-label="breadcrumbs">
+<ul>
+
+
+    <li class="is-active"><a href="https://copper-leaf.github.io/kodiak" aria-current="page">Kodiak</a></li>
+
+
+</ul>
+</nav>
+
+
+      </div>
+    
+    
+<div class="box">
+
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="content is-medium-tablet is-large-desktop">
+<h1 id="kodiak">Kodiak</h1>
+<p>A collection wrappers around various code documentation tools which produces a common JSON output readable by Orchid.</p>
+<h2 id="what-is-this">What is this?</h2>
+<p>Most code documentation tools work by generating an HTML site. They have to do a lot of work to format navigate the
+code's internal structure, and then create a website that very often, looks quite awful. It would be better for everyone
+if the language designers only needed to produce a code model, and then let someone else do the hard work of turning
+that model into a website.</p>
+<p><a href="https://orchid.netlify.com/">Orchid</a> is that tool that creates a beautiful website for your code docs. This project is
+the other side of that coin which produces a model that Orchid can use to generate those sites.</p>
+<h3 id="short-term-goal">Short-Term Goal</h3>
+<p>In the short-term, this project contains a series of formatters for various languages, which each can be mapped to a
+specific Orchid plugin.</p>
+<h3 id="mid-term-goal">Mid-Term Goal</h3>
+<p>In the mid-term, this project will create a common interface to the code models created by all the individual language
+formatters. Orchid will then be updated to read from this common model, rather than the specific language models. This
+will aid in maintainability, and also make it easier for Orchid to support new languages in the future.</p>
+<h3 id="long-term-goal">Long-Term Goal</h3>
+<p>In the long-term, this project will not only create formatters for individual languages, but also create a
+<em>specification</em> for that code documentation model so that any tool can generate JSON matching that specification and
+Orchid will be able to read it. This project will then create and document that specification and provide several tools
+which conform to that spec, but other tools are free to create their own implementations, and Orchid will use it just
+the same.</p>
+<h2 id="project-structure">Project Structure</h2>
+<p>Each language in this project contains 3 individual projects, as follows:</p>
+<ul>
+<li><code>{language}/{language}-models</code></li>
+<li><code>{language}/{language}-formatter</code></li>
+<li><code>{language}/{language}-runner</code></li>
+</ul>
+<p>These packages are related like so:</p>
+<ul>
+<li><code>-formatter</code> contains a compile dependency on <code>-models</code>, and is compiled as a fat jar</li>
+<li><code>-runner</code> contains a compile dependency on <code>-models</code>, and is used like a library. It also embeds the <code>-formatter</code> fat
+jar in its project resources.</li>
+<li><code>-models</code> only contains model classes and functions to serialize/deserialize them</li>
+</ul>
+<p>The <code>-formatter</code> project is a fat jar, embedding all of its dependencies and runtimes needed to run. It's role is to run
+some task which will produce a code model in JSON format using the <code>-models</code> format, written to files on disk. It is
+designed to be run completely in isolation, as a CLI tool or started from another process.</p>
+<p>The <code>-runner</code> project is a lightweight wrapper around the <code>-formatter</code> project. It embeds the <code>-formatter</code> fat jar in
+its resources, and when requested will cache that jar to the local filesystem and run it as a separate process. It will
+then use the same <code>-models</code> project to read the written JSON files and return them as a model to the application calling
+this library.</p>
+<p>The <code>-models</code> project uses Kotlinx serialization to create an interface between the <code>-formatter</code> and <code>-runner</code> projects.
+It should contain no logic, and just creates the language-specific models.</p>
+<h2 id="usage">Usage</h2>
+<p>The general usage for any of these formatters looks like like the following. See the
+<a href="https://copper-leaf.github.io/kodiak">official docs</a> for specifics for each language.</p>
+<ol>
+<li>Include the <code>-runner</code> dependency in your app:</li>
+</ol>
+<pre><code class="language-groovy">repositories {
+    jcenter()
+}
+dependencies {
+    compile 'com.eden:{language}-runner:{latest version}'
+}
+</code></pre>
+<ol start="2">
+<li>Call the wrapper library and get back the code model. The formatter will run synchronously; for async work you will
+need to start and run it all on a background thread.</li>
+</ol>
+<pre><code class="language-kotlin">// create the runner, and give it a cache directory
+var cacheDir: Path = Files.createTempDirectory(&quot;cacheDir&quot;)
+val runner: {language}Invoker = {language}InvokerImpl(cacheDir)
+
+// create the output directory, and make sure to clear it between runs
+val outputDir = File(&quot;outputDir&quot;).canonicalFile.toPath()
+outputDir.toFile().deleteRecursively()
+outputDir.toFile().mkdirs()
+
+// run the formatter, and get back a documentation model
+val rootDoc = runner.getRootDoc(
+    listOf( // set one or more directories containing source code files
+        File(&quot;sourceDir1&quot;).canonicalFile.toPath(),
+        File(&quot;sourceDir2&quot;).canonicalFile.toPath()
+    ),
+    outputDir // tell it where to write the results
+) { inputStream -&gt; IOStreamUtils.InputStreamPrinter(inputStream, null) } // handle STDOUT streams from the external process
+
+// do whatever you want with the model
+</code></pre>
+<h2 id="build-and-test">Build and Test</h2>
+<p>Each project is set up such that running <code>build</code> on the <code>-runner</code> project of each language will build and check
+complete functionality for that language's formatter.</p>
+<ul>
+<li><code>./gradlew clean :javadoc:javadoc-runner:build</code></li>
+<li><code>./gradlew clean :dokka:dokka-runner:build</code></li>
+<li><code>./gradlew clean :groovydoc:groovydoc-runner:build</code></li>
+</ul>
+<p>Test source files for each language should go in the appropriate <code>-formatter</code> <code>test/</code> sourceroot.</p>
+<ul>
+<li><code>:javadoc:javadoc-runner</code> tests sources from:
+<ul>
+<li><code>javadoc/javadoc-formatter/src/example/java</code></li>
+</ul>
+</li>
+<li><code>:dokka:dokka-runner</code> tests sources from:
+<ul>
+<li><code>javadoc/javadoc-formatter/src/example/java</code></li>
+<li><code>dokka/dokka-formatter/src/example/kotlin</code></li>
+</ul>
+</li>
+<li><code>:groovydoc:groovydoc-runner</code> tests sources from:
+<ul>
+<li><code>javadoc/javadoc-formatter/src/example/java</code></li>
+<li><code>groovydoc/groovydoc-formatter/src/example/groovy</code></li>
+</ul>
+</li>
+<li><code>:swiftdoc:swiftdoc-runner</code> tests sources from:
+<ul>
+<li><code>swiftdoc/swiftdoc-formatter/src/example/swift</code></li>
+</ul>
+</li>
+</ul>
+<p>To build and serve docs locally:</p>
+<ul>
+<li><code>./gradlew :docs:orchidServe</code></li>
+</ul>
+
+</div>
+                    
+                
+            
+        
+            
+        
+    
+    <!-- end:inject components -->
+
+
+</div>
+
+      <div class="grow"></div>
+      <div class="page-footer">
+      
+        <nav class="pagination is-rounded footer-pagination" role="navigation" aria-label="pagination">
+
+  <a class="pagination-previous" disabled>
+    <span class="inner">
+      <span class="icon"><i class="fas fa-chevron-left"></i></span>
+      Previous
+    </span>
+  </a>
+
+
+
+  <a class="pagination-next" disabled>
+    <span class="inner">
+      Next
+      <span class="icon"><i class="fas fa-chevron-right"></i></span>
+    </span>
+  </a>
+
+</nav>
+
+<footer class="footer">
+  <div class="content is-small">
+  <p>
+  &copy;2019 Copper Leaf.
+</p>
+<p>
+  Site proudly built with <a href="https://orchid.netlify.com/">Orchid</a>.<br>
+</p>
+<p>
+  <b>See Also:</b><br>
+  <span class="tag is-light"><a href="https://orchid.netlify.com/">Orchid</a></span>
+  <span class="tag is-light"><a href="https://javaeden.github.io/Clog/">Clog</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/krow/">Krow</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kudzu/">Kudzu</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/trellis/">Trellis</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kodiak/">Kodiak</a></span>
+</p>
+  </div>
+</footer>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<!-- start:inject scripts -->
+<script defer src="https://copper-leaf.github.io/kodiak/Copper/53078e28/releases/v5.4.0/js/all.js"></script>
+<script src="https://copper-leaf.github.io/kodiak/Copper/53078e28/assets/js/bulma-accordion.min.js"></script>
+<script src="https://copper-leaf.github.io/kodiak/Copper/53078e28/assets/js/bulma-tabs.js"></script>
+<script src="https://copper-leaf.github.io/kodiak/ajax/libs/prism/1.8.4/prism.min.js"></script>
+<script src="https://copper-leaf.github.io/kodiak/ajax/libs/prism/1.8.4/components/prism-kotlin.min.js"></script>
+<script src="https://copper-leaf.github.io/kodiak/ajax/libs/prism/1.8.4/components/prism-java.min.js"></script>
+<script src="https://copper-leaf.github.io/kodiak/ajax/libs/prism/1.8.4/components/prism-groovy.min.js"></script>
+<!-- end:inject scripts -->
+
+</body>
+</html>

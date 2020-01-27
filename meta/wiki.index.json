@@ -1,0 +1,165 @@
+{
+  "ownKey": "wiki",
+  "childrenPages": {"wiki": {
+    "ownKey": "wiki",
+    "childrenPages": {"languages": {
+      "ownKey": "languages",
+      "childrenPages": {
+        "java": {
+          "ownKey": "java",
+          "ownPages": [{
+            "reference": {
+              "path": "wiki/languages",
+              "baseUrl": "https://copper-leaf.github.io/kodiak",
+              "fileName": "java",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/kodiak/wiki/languages/java"
+            },
+            "next": {
+              "path": "wiki/languages",
+              "baseUrl": "https://copper-leaf.github.io/kodiak",
+              "fileName": "groovy",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/kodiak/wiki/languages/groovy"
+            },
+            "previous": {
+              "path": "wiki",
+              "baseUrl": "https://copper-leaf.github.io/kodiak",
+              "fileName": "languages",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/kodiak/wiki/languages"
+            },
+            "description": "",
+            "title": "Java",
+            "content": "<h1 id=\"javadoc\">Javadoc<\/h1>\n<p>Uses a Javadoc doclet to produce a JSON format that Orchid can use to generate a documentation site.<\/p>\n<h2 id=\"usage\">Usage<\/h2>\n<pre><code class=\"language-groovy\">// build.gradle\nrepositories {\n    jcenter()\n}\ndependencies {\n    compile 'com.eden.kodiak:javadoc-runner:{latest version}'\n}\n<\/code><\/pre>\n<pre><code class=\"language-kotlin\">var cacheDir: Path = Files.createTempDirectory(&quot;javadocCache&quot;)\nval runner: JavadocInvoker = JavadocInvokerImpl(cacheDir)\n\nval outputDir = File(&quot;build/javadoc&quot;).canonicalFile.toPath()\noutputDir.toFile().deleteRecursively()\noutputDir.toFile().mkdirs()\n\nval rootDoc = runner.getRootDoc(\n    listOf(\n        File(&quot;src/main/java&quot;).canonicalFile.toPath()\n    ),\n    outputDir\n) { inputStream -&gt; IOStreamUtils.InputStreamPrinter(inputStream, null) }\n\nrootDoc.packages.forEach { processPackage(it) }\nrootDoc.classes.forEach { processClass(it) }\n<\/code><\/pre>\n<h2 id=\"references\">References<\/h2>\n<ul>\n<li><a href=\"https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javadoc.html\">Javadoc<\/a><\/li>\n<\/ul>\n"
+          }]
+        },
+        "groovy": {
+          "ownKey": "groovy",
+          "ownPages": [{
+            "reference": {
+              "path": "wiki/languages",
+              "baseUrl": "https://copper-leaf.github.io/kodiak",
+              "fileName": "groovy",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/kodiak/wiki/languages/groovy"
+            },
+            "next": {
+              "path": "wiki/languages",
+              "baseUrl": "https://copper-leaf.github.io/kodiak",
+              "fileName": "kotlin",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/kodiak/wiki/languages/kotlin"
+            },
+            "previous": {
+              "path": "wiki/languages",
+              "baseUrl": "https://copper-leaf.github.io/kodiak",
+              "fileName": "java",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/kodiak/wiki/languages/java"
+            },
+            "description": "",
+            "title": "Groovy",
+            "content": "<h1 id=\"groovydoc\">Groovydoc<\/h1>\n<p>Uses a Groovy's Groovydoc APIs to produce a JSON format that Orchid can use to generate a documentation site.<\/p>\n<h2 id=\"usage\">Usage<\/h2>\n<pre><code class=\"language-groovy\">// build.gradle\nrepositories {\n    jcenter()\n}\ndependencies {\n    compile 'com.eden.kodiak:groovydoc-runner:{latest version}'\n}\n<\/code><\/pre>\n<pre><code class=\"language-kotlin\">var cacheDir: Path = Files.createTempDirectory(&quot;groovydocCache&quot;)\nval runner: GroovydocInvoker = GroovydocInvokerImpl(cacheDir)\n\nval outputDir = File(&quot;build/groovydoc&quot;).canonicalFile.toPath()\noutputDir.toFile().deleteRecursively()\noutputDir.toFile().mkdirs()\n\nval rootDoc = runner.getRootDoc(\n    listOf(\n        File(&quot;src/main/java&quot;).canonicalFile.toPath(),\n        File(&quot;src/main/groovy&quot;).canonicalFile.toPath()\n    ),\n    outputDir\n) { inputStream -&gt; IOStreamUtils.InputStreamPrinter(inputStream, null) }\n\nrootDoc.packages.forEach { processPackage(it) }\nrootDoc.classes.forEach { processClass(it) }\n<\/code><\/pre>\n<h2 id=\"references\">References<\/h2>\n<ul>\n<li><a href=\"http://docs.groovy-lang.org/docs/next/html/documentation/#_groovydoc_the_groovy_java_documentation_generator\">Groovydoc<\/a><\/li>\n<\/ul>\n"
+          }]
+        },
+        "kotlin": {
+          "ownKey": "kotlin",
+          "ownPages": [{
+            "reference": {
+              "path": "wiki/languages",
+              "baseUrl": "https://copper-leaf.github.io/kodiak",
+              "fileName": "kotlin",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/kodiak/wiki/languages/kotlin"
+            },
+            "next": {
+              "path": "wiki/languages",
+              "baseUrl": "https://copper-leaf.github.io/kodiak",
+              "fileName": "swift",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/kodiak/wiki/languages/swift"
+            },
+            "previous": {
+              "path": "wiki/languages",
+              "baseUrl": "https://copper-leaf.github.io/kodiak",
+              "fileName": "groovy",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/kodiak/wiki/languages/groovy"
+            },
+            "description": "",
+            "title": "Kotlin",
+            "content": "<h1 id=\"kotlindoc\">Kotlindoc<\/h1>\n<p>Uses a Dokka formatter to produce a JSON format that Orchid can use to generate a documentation site.<\/p>\n<h2 id=\"usage\">Usage<\/h2>\n<pre><code class=\"language-groovy\">// build.gradle\nrepositories {\n    jcenter()\n}\ndependencies {\n    compile 'com.eden.kodiak:dokka-runner:{latest version}'\n}\n<\/code><\/pre>\n<pre><code class=\"language-kotlin\">var cacheDir: Path = Files.createTempDirectory(&quot;dokkaCache&quot;)\nval runner: KotlindocInvoker = KotlindocInvokerImpl(cacheDir)\n\nval outputDir = File(&quot;build/dokka&quot;).canonicalFile.toPath()\noutputDir.toFile().deleteRecursively()\noutputDir.toFile().mkdirs()\n\nval rootDoc = runner.getRootDoc(\n    listOf(\n        File(&quot;src/main/java&quot;).canonicalFile.toPath(),\n        File(&quot;src/main/kotlin&quot;).canonicalFile.toPath()\n    ),\n    outputDir\n) { inputStream -&gt; IOStreamUtils.InputStreamPrinter(inputStream, null) }\n\nrootDoc.packages.forEach { processPackage(it) }\nrootDoc.classes.forEach { processClass(it) }\n<\/code><\/pre>\n<h2 id=\"references\">References<\/h2>\n<ul>\n<li><a href=\"https://github.com/Kotlin/dokka\">Dokka<\/a><\/li>\n<\/ul>\n"
+          }]
+        },
+        "swift": {
+          "ownKey": "swift",
+          "ownPages": [{
+            "reference": {
+              "path": "wiki/languages",
+              "baseUrl": "https://copper-leaf.github.io/kodiak",
+              "fileName": "swift",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/kodiak/wiki/languages/swift"
+            },
+            "previous": {
+              "path": "wiki/languages",
+              "baseUrl": "https://copper-leaf.github.io/kodiak",
+              "fileName": "kotlin",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/kodiak/wiki/languages/kotlin"
+            },
+            "description": "",
+            "title": "Swift",
+            "content": "<h1 id=\"swiftdoc\">Swiftdoc<\/h1>\n<p>Uses a Sourcekitten formatter to produce a JSON format that Orchid can use to generate a documentation site.<\/p>\n<h2 id=\"usage\">Usage<\/h2>\n<pre><code class=\"language-groovy\">// build.gradle\nrepositories {\n    jcenter()\n}\ndependencies {\n    compile 'com.eden.kodiak:swiftdoc-runner:{latest version}'\n}\n<\/code><\/pre>\n<pre><code class=\"language-swift\">var cacheDir: Path = Files.createTempDirectory(&quot;swiftdocCache&quot;)\nval runner: SwiftdocInvoker = SwiftdocInvokerImpl(cacheDir)\n\nval outputDir = File(&quot;build/swiftdoc&quot;).canonicalFile.toPath()\noutputDir.toFile().deleteRecursively()\noutputDir.toFile().mkdirs()\n\nval rootDoc = runner.getRootDoc(\n    listOf(\n        File(&quot;src/main/swift&quot;).canonicalFile.toPath()\n    ),\n    outputDir\n) { inputStream -&gt; IOStreamUtils.InputStreamPrinter(inputStream, null) }\n\nrootDoc.sourceFiles.forEach { processSourceFile(it) }\nrootDoc.classes.forEach { processClass(it) }\n<\/code><\/pre>\n<h2 id=\"references\">References<\/h2>\n<ul>\n<li><a href=\"https://github.com/jpsim/SourceKitten\">SourceKitten<\/a><\/li>\n<\/ul>\n"
+          }]
+        }
+      },
+      "ownPages": [{
+        "reference": {
+          "path": "wiki",
+          "baseUrl": "https://copper-leaf.github.io/kodiak",
+          "fileName": "languages",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://copper-leaf.github.io/kodiak/wiki/languages"
+        },
+        "next": {
+          "path": "wiki/languages",
+          "baseUrl": "https://copper-leaf.github.io/kodiak",
+          "fileName": "java",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://copper-leaf.github.io/kodiak/wiki/languages/java"
+        },
+        "description": "",
+        "title": "Languages",
+        "content": "<ul>\n<li>\n<p><a href=\"https://copper-leaf.github.io/kodiak/wiki/languages/java\">Java<\/a><\/p>\n<\/li>\n<li>\n<p><a href=\"https://copper-leaf.github.io/kodiak/wiki/languages/groovy\">Groovy<\/a><\/p>\n<\/li>\n<li>\n<p><a href=\"https://copper-leaf.github.io/kodiak/wiki/languages/kotlin\">Kotlin<\/a><\/p>\n<\/li>\n<li>\n<p><a href=\"https://copper-leaf.github.io/kodiak/wiki/languages/swift\">Swift<\/a><\/p>\n<\/li>\n<\/ul>\n"
+      }]
+    }},
+    "ownPages": [{
+      "reference": {
+        "path": "",
+        "baseUrl": "https://copper-leaf.github.io/kodiak",
+        "fileName": "wiki",
+        "extension": "html",
+        "usePrettyUrl": true,
+        "link": "https://copper-leaf.github.io/kodiak/wiki"
+      },
+      "description": "",
+      "title": "Wiki",
+      "content": "<html>\n <head><\/head>\n <body>\n  <h2 id=\"languages\"><a href=\"https://copper-leaf.github.io/kodiak/wiki/languages\">Languages<\/a><\/h2> \n  <ul> \n   <li><a href=\"https://copper-leaf.github.io/kodiak/wiki/languages/java\">Java<\/a><\/li> \n   <li><a href=\"https://copper-leaf.github.io/kodiak/wiki/languages/groovy\">Groovy<\/a><\/li> \n   <li><a href=\"https://copper-leaf.github.io/kodiak/wiki/languages/kotlin\">Kotlin<\/a><\/li> \n   <li><a href=\"https://copper-leaf.github.io/kodiak/wiki/languages/swift\">Swift<\/a><\/li> \n  <\/ul> \n <\/body>\n<\/html>\n"
+    }]
+  }}
+}
